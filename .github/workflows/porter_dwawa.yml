@@ -14,7 +14,7 @@ jobs:
       run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
     - name: Update Porter App
       timeout-minutes: 20
-      uses: lsnow99/porter-update-action@v.0.2.0
+      uses: lsnow99/porter-update-action@v0.2.0
       with:
         app: dwawa
         cluster: "1"
